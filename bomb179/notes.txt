@@ -1,0 +1,20 @@
+gdb bomb
+source init
+
+gdb run      -or-     run solutions.txt
+
+
+
+(gdb) layout asm
+(gdb) ni (shows where it is paused)
+(gdb) x/s $rsi  (shows unhashed string)
+(gdb) x/s $edi
+(gdb) x/s $rip
+(gdb) tui disable
+
+quit
+
+
+
+
+$ signs are constants in assembly
